@@ -16,8 +16,14 @@
                 },
             },
             {
-                load: "js/game.js"
-            }]);
+                load: "js/game.js",
+                complete:function(){
+                    $(function(){
+                        var game = new BubbleShoot.Game();
+                        game.init();
+                    })
+                }
+            }]};
         </script>
     </head>
     <body>

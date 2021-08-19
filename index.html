@@ -6,15 +6,18 @@
         <link href="css/main.css" rel="stylesheet">
         <script src="modernizr-custom.js"></script>
         <script>
-            Modernizr.load({
+            Modernizr.load[{
                 load:
                 "//ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.js",
                 complete: function() {
                     if(!window.jquery){
                         Modernizr.load("js/jquery360.js");
                     }
-                }
-            });
+                },
+            },
+            {
+                load: "js/game.js"
+            }]);
         </script>
     </head>
     <body>
